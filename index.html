@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <!-- CSS Reset by Eric Meyer -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Design System</h1>
+    </header>
+    <hr />
+    <div class="container">
+        <section class="section colors-section">
+            <h2 class="subheading">Colors</h2>
+            <div class="inner-container">
+                <div onclick="copyFunction(this)" class="color primary" title="Click to Copy"><p class="color-code">#fffcf2</p></div>
+                <div onclick="copyFunction(this)" class="color secondary" title="Click to Copy"><p class="color-code">#730000</p></div>
+                <div onclick="copyFunction(this)" class="color tertiary" title="Click to Copy"><p class="color-code">#000000</p></div>
+                <div onclick="copyFunction(this)" class="color accent" title="Click to Copy"><p class="color-code">#002d2f</p></div>
+            </div>
+        </section>
+        <section class="section fonts-section">
+            <h2 class="subheading">Fonts</h2>
+            <div class="inner-container">
+                <div class="bartle-section">
+                    <h3 class="bbh-bartle">BBH Bartle</h3>
+                    <p class="bbh-bartle normal">Lorem ipsum</p>
+                    <p class="bbh-bartle bold">Lorem ipsum</p>
+                    <p class="bbh-bartle italic">Lorem ipsum</p>
+                </div>
+                <br />
+                <div class="space-section">
+                    <h3 class="space-grotesk">Space Grotesk</h3>
+                    <p class="space-grotesk normal">Lorem ipsum</p>
+                    <p class="space-grotesk bold">Lorem ipsum</p>
+                    <p class="space-grotesk italic">Lorem ipsum</p>
+                </div>
+            </div>
+        </section>
+        <section class="section text-styles-section">
+            <h2 class="subheading">Text Styles</h2>
+            <div class="inner-container">
+                <div class="heading1-section">
+                    <h1 class="bbh-bartle" style="color: var(--tertiary-color)">Heading 1</h1>
+                    <p><strong>font-size</strong>: 2rem; (32px)</p>
+                    <p><strong>font-weight</strong>: 400;</p>
+                    <p><strong>font-family</strong>: "BBH Bartle", sans-serif;</p>
+                    <p><strong>letter-spacing</strong>: 0.25rem;</p>
+                    <p><strong>word-spacing</strong>: 0.25rem;</p>
+                </div>
+                <br />
+                <div class="h1h2-container">
+                    <div class="heading2-section">
+                        <h2 style="color: var(--tertiary-color)">Heading 2</h2>
+                        <p><strong>font-size</strong>: 2rem; (32px)</p>
+                        <p><strong>font-weight</strong>: 400;</p>
+                        <p><strong>font-family</strong>: "Space Grotesk", sans-serif;</p>
+                    </div>
+                    <div class="heading3-section">
+                        <h3 style="color: var(--tertiary-color)">Heading 3</h3>
+                        <p><strong>font-size</strong>: 1.5rem; (24px)</p>
+                        <p><strong>font-weight</strong>: 400;</p>
+                        <p><strong>font-family</strong>: "Space Grotesk", sans-serif;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="created-by"><p>created with ❤️ by <span id="creator">kerem</span></p></div>
+    <script src="script.js"></script>
+</body>
+</html>
